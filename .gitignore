@@ -1,0 +1,8 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+/dist
+/eyes-logs
+/allure-results
+/.env
+/node_modules
+.idea
