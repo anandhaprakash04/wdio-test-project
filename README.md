@@ -7,12 +7,14 @@
 
 https://github.com/anandhaprakash-gartner/wdio-applitools.git
 
-### Add your browserstack and applitools keys in wdio.config.ts file before running
+### Add your browserstack in wdio.config.ts file before running
+
+Make sure you have below values in either .env under root folder or .bash_profile
 
 ```
-const bstackUserName = '';
-const bstackPassword =  '';
-const applitoolsKey= '';
+BROWSERSTACK_USERNAME=""
+BROWSERSTACK_ACCESS_KEY=""
+APPLITOOLS_API_KEY=""
 
 ```
 
