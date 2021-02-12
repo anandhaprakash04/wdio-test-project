@@ -1,5 +1,5 @@
 require('dotenv').config();
-const browsersList = require('./browsers.ts');
+// const browsersList = require('./browsers.ts');
 const cliargs = require('yargs')
     .default('browserName', 'chrome')
     .argv;
@@ -12,7 +12,12 @@ exports.config = {
         './src/specs/**/*.ts'
     ],
     maxInstances: 10,
-    capabilities: browsersList['DEFAULT_BROWSERLIST'][browserName],
+    capabilities:
+        [
+            {
+                browserName: 'chrome'
+            },
+        ],
     logLevel: 'trace',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
