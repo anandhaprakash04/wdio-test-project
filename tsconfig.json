@@ -4,19 +4,29 @@
     "target": "ES6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "sourceMap": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "sourceMap": false,
     "declaration": false,
     "noImplicitAny": false,
     "outDir": "dist",
     "types": [
       "jasmine",
-      "@wdio/sync",
-      "node"
+      "webdriverio/sync",
+      "node",
+      "@wdio/jasmine-framework",
+      "expect-webdriverio/jasmine"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
     ]
   },
   "exclude": [
     "allure-results",
     "dist",
     "node_modules"
+  ],
+  "include": [
+    "./src/**/*.ts"
   ]
 }

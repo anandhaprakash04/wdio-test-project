@@ -14,7 +14,6 @@ Make sure you have below values in either .env under root folder or .bash_profil
 ```
 BROWSERSTACK_USERNAME=""
 BROWSERSTACK_ACCESS_KEY=""
-APPLITOOLS_API_KEY=""
 
 ```
 
@@ -22,7 +21,7 @@ APPLITOOLS_API_KEY=""
 
 1. Install packages 
 ```
-npm install
+yarn install
 ```
 
 #### Optional Parameters/Arguments to be passed to the test;  
@@ -33,5 +32,5 @@ npm install
 
 Browserstack: 
 ```
-npm run test -- --browserName chrome
+yarn test -- --browserName chrome
 ```
