@@ -32,5 +32,5 @@ yarn install
 
 Browserstack: 
 ```
-yarn test -- --browserName chrome
+yarn test --browserName chrome
 ```
